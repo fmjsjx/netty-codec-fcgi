@@ -48,3 +48,28 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+    options.encoding = "UTF-8"
+}
+
+
+
+jar {
+    manifest {
+        attributes('Implementation-Title': project.name,
+                   'Implementation-Version': project.version)
+    }
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    classifier = "sources"
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives sourcesJar
+}
