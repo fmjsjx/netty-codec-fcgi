@@ -37,7 +37,7 @@ dependencies {
 
     api "org.slf4j:slf4j-api:${slf4jVersion}"
 
-    runtimeClasspath "io.netty:netty-all:${nettyVersion}"
+    compileClasspath "io.netty:netty-all:${nettyVersion}"
 
     // Use JUnit test framework
     testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
