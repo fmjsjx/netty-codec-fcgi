@@ -24,9 +24,6 @@ ext {
 
 repositories {
     maven {
-        url "http://192.168.1.52:8081/nexus/content/groups/public"
-    }
-    maven {
     	url "http://maven.oschina.net/content/groups/public/"
     }
     mavenCentral()
