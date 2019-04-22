@@ -24,8 +24,9 @@ ext {
 
 repositories {
     maven {
-    	url "http://maven.oschina.net/content/groups/public/"
+    	url "https://maven.aliyun.com/repository/public"
     }
+    mavenLocal()
     mavenCentral()
     jcenter()
 }
