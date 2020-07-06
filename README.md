@@ -1,3 +1,8 @@
+# Unmaintained!
+This project is archived and unmaintained.
+
+> A new `Fast-CGI` codec component has been provided by [fmjsjx/libnetty](https://github.com/fmjsjx/libnetty).
+
 # netty-codec-fcgi
 A Fast-CGI codec component based on netty-4.1.x.
 
